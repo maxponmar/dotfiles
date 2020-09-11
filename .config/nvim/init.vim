@@ -29,6 +29,7 @@ Plug 'alvan/vim-closetag'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 set bg=light
@@ -153,23 +154,23 @@ endfunction
 " Easymotion <,-s> Enter 2 characters
 map <Leader>e <Plug>(easymotion-s2)
 
+" Tagbar
+nmap <space>t :TagbarToggle<CR>
+
 " Typescript
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
 
-" Live Server (Bracey)
-let g:bracey_refresh_on_save=1
-let g:bracey_auto_start_browser=0
-let g:bracey_browser_command='firefox'
-let g:bracey_server_port=5050
-" autocmd FileType html, css, javascript map <leader>lsi :Bracey<CR>
-" autocmd FileType html, css, javascript map <leader>lss :BraceyStop<CR>
-" autocmd FileType html, css, javascript map <leader>lsr :BraceyReload<CR>
-
-
 " Simple Shortcuts
 map <space>q :q <CR>
 map <space>w :w <CR>
+
+" Tabs
+nnoremap tn :tabnew<SPACE>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
 
 " Change tab to 2 spaces
 set tabstop=2

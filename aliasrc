@@ -84,6 +84,7 @@ alias cdD='cd ~/Documents'
 
 # My aliases
 alias \
+  sdwm="cd ~/.local/src/dwm && nvim config.h" \
   bright="xrandr --output eDP-1 --brightness" \
   td="sudo timedatectl set-ntp true" \
   kbe="setxkbmap es" \

@@ -22,12 +22,14 @@ Plug 'ap/vim-css-color'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'branch': 'release/0.18' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install', 'branch': 'release/1.x' }
 Plug 'alvan/vim-closetag'
 Plug 'liuchengxu/space-vim-dark'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'majutsushi/tagbar'
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 set bg=light
@@ -173,7 +175,7 @@ set shiftwidth=2
 set expandtab
 
 " Prettier
-map <space>p :Prettier <CR>
+map <leader>p :Prettier <CR>
 
 " Go at the beginning or the end of the line in insert mode (A)
 " Ctrl+e => End of the line

@@ -76,6 +76,11 @@ alias .3='cd ../../..'
 alias .4='cd ../../..'
 alias .5='cd ../../../..'
 alias .6='cd ../../../../..'
+alias cdp='cd ~/Projects'
+alias cdc='cd ~/Courses'
+alias cdP='cd ~/Pictures'
+alias cdd='cd ~/Downloads'
+alias cdD='cd ~/Documents'
 
 # My aliases
 alias \
@@ -89,9 +94,12 @@ alias \
   sd="signal-desktop" \
   r="ranger" \
   t="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+  tor="bash .tor-browser_en-US/Browser/start-tor-browser" \
 
 # For development
 alias \
+  urcontroller="sudo bash /home/max/ursim-3.14.3.1031232/controller.sh" \
+  urinterface="sudo bash /home/max/ursim-3.14.3.1031232/interface.sh" \
   py="python" \
   mongop="mongod --port 27017 --dbpath /home/max/database" \
   drun="dotnet run" \

@@ -11,5 +11,8 @@ cp ~/.config/ranger/rc.conf ~/Documents/dotfiles
 echo "-> Updating aliasrc file"
 cp ~/.config/shell/aliasrc ~/Documents/dotfiles
 
+echo "-> Updating zshrc file"
+cp ~/.config/zsh/.zshrc ~/Documents/dotfiles
+
 echo "-> Updating DWM file"
 cp ~/.local/src/dwm/config.h ~/Documents/dotfiles

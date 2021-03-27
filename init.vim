@@ -30,6 +30,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set bg=light
@@ -176,6 +178,9 @@ set expandtab
 
 " Prettier
 map <leader>p :Prettier <CR>
+
+" fzf
+map <space>f :Files <CR>
 
 " Go at the beginning or the end of the line in insert mode (A)
 " Ctrl+e => End of the line

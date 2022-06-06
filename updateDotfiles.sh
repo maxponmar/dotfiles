@@ -3,16 +3,16 @@
 echo "==> Updating Dotfiles"
 
 echo "-> Updating nvim file"
-cp ~/.config/nvim/init.vim ~/Documents/dotfiles
+cp ~/.config/nvim/init.vim ~/Projects/dotfiles
 
-echo "-> Updating ranger shortcuts file"
-cp ~/.config/ranger/rc.conf ~/Documents/dotfiles
+# echo "-> Updating ranger shortcuts file"
+# cp ~/.config/ranger/rc.conf ~/Projects/dotfiles
 
 echo "-> Updating aliasrc file"
-cp ~/.config/shell/aliasrc ~/Documents/dotfiles
+cp ~/.config/shell/aliasrc ~/Projects/dotfiles
 
 echo "-> Updating zshrc file"
-cp ~/.config/zsh/.zshrc ~/Documents/dotfiles
+cp ~/.config/zsh/.zshrc ~/Projects/dotfiles
 
 echo "-> Updating DWM file"
-cp ~/.local/src/dwm/config.h ~/Documents/dotfiles
+cp ~/.local/src/dwm/config.h ~/Projects/dotfiles
